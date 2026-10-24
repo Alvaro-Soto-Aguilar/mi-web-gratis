@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web Gratis</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --text: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--text);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 100;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--primary);
+            font-size: 24px;
+        }
+
+        nav a {
+            color: var(--dark);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #e0e7ff 0%, #ffffff 100%);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            color: var(--dark);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-dark {
+            background: var(--dark);
+        }
+
+        .services {
+            padding: 80px 0;
+            background: white;
+            text-align: center;
+        }
+
+        .services h3, .contact h3 {
+            font-size: 32px;
+            color: var(--dark);
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            padding: 40px 30px;
+            background: var(--light);
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        .card h4 {
+            font-size: 20px;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">MiProyecto</h1>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Bienvenido a mi sitio web</h2>
+            <p>Desarrollado a medida, rápido, moderno y alojado en la nube de forma 100% gratuita.</p>
+            <a href="#contacto" class="btn">Saber más</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <div class="container">
+            <h3>Lo que ofrecemos</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>⚡ Velocidad</h4>
+                    <p>Optimizado para cargar en milisegundos gracias a la red global de Render.</p>
+                </div>
+                <div class="card">
+                    <h4>🎨 Diseño Limpio</h4>
+                    <p>Estilo moderno, minimalista y completamente adaptado a teléfonos móviles.</p>
+                </div>
+                <div class="card">
+                    <h4>🔒 100% Gratis</h4>
+                    <p>Sin cuotas mensuales, sin renovaciones sorpresa. Costo cero de por vida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h3>Contacta conmigo</h3>
+            <p>¿Tienes un proyecto en mente? Escríbeme y lo hacemos realidad.</p>
+            <a href="mailto:tu-correo@email.com" class="btn btn-dark">Enviar un Correo</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MiProyecto. Desarrollado con Inteligencia Artificial.</p>
+    </footer>
+</body>
+</html>
